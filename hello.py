@@ -1,3 +1,3 @@
-print(f"My name {6} is sila sila ki jawani")
-print("I am sexy for you mai tere hath nhi ani")
-print("sila ki jawani.")
+print(f"My name {6} is raju")
+print("I am from \"Bihar\", Aurangabad district")
+print("I am Bachelore.")
