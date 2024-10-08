@@ -1,0 +1,142 @@
+
+Name- ALTAMASH RAZA 
+ID- MST01-0113
+
+
+Q1- What is python? Provide some key features of python.
+Ans-  Python is a high level programming language that used various purpose like web development, data analysis, AI/ML and automation.
+some key features of python are:
+Simple and easy to learn
+Inerpreted Language
+Cross-plateform
+large standerd library
+Dynamically typed
+community support
+
+Q2- Expalin the difference between python 2 and python 3.
+Ans - Python 2: python 2 is older version, discontinued since 2020, with different print statement syntex eg, (print "Hello").
+         Python 3: It is a current version, with more modern feature, better performance, and improved syntax eg, print("hello").
+
+Q3- How do you comment out multiple line of code in python?
+ Ans- we can use multiple line comment like #this is comment or, ''' This is line1 (more than line comment) '''
+
+Q4- Describe te difference between == and is in python.
+ Ans- A == means check the values of two variables or equal
+        and is, It check if two variables refer to te same item in memory and something.
+
+Q5- What is PEP 8? Why is it important?
+ Ans- PEP 8 is stand for Python Enhancement Proposal 8 and it is a style guide for writing clean and readable Python code. and its provide guidelines on how to formate python code.
+PEP 8 important feature are:
+  Improve readability
+  Promotes consistancy it means follow the same rule when writing python code.
+  Reduces errors, its means follows guidelines can help avoid common mistakes or confusion in the code.
+
+Q6- Explain the concept of dynamic typing in python.
+ Ans- Dynamic typing in  python means that you don't need to declare the type of a variable when you create it. python automatically figure out the type of the varible based on the value you assign it.
+    for ex- x = 10 # pyhton know x is a integer.
+            x = "Altamsh" # pyhton know automatically x is string
+
+Q7- what are tuples in python? How are they difference from lists?
+Ans- tuples is a type of collection that stores multiple item in a single variable, Tuples are written using parentheses () and items are seperated by commas.
+    list are mutable, means you can change, add or remove item after the list is created and tuples are immutable means it's can't change or modify their item. 
+
+Q8- How do you create a function in python? provide an example
+ Ans- In Python we create a function using te def keyword, followed by the function name, parentheses (), and a colon: inside th function, you write code that will run when the function is called
+  for ex- def fname():
+             print("hello, wellcome python")
+        fname()
+
+Q9- Explain the difference between local and global variable in pyhton.
+Ans- In pyhton local variable : Defined inside a function and can only be used within function
+     They exist only while the function is running.
+ Global variable:Defined outside of any function, making them accessible from anywhere in the code.
+They can be used in functions and other parts of the program.
+
+Q10- How do you handle exceptions in Python?
+Ans- In Python, you handle exceptions using the try and except blocks. Here's how it works:
+
+try block: You write the code that might cause an error.
+except block: You write the code that runs if an error occurs.
+
+Q11- What are decorators in Python? How do you use them? 
+Ans- Decorators in Python are a special type of function that allows you to modify or enhance the behavior of another function or method without changing its code. They are often used for tasks like logging, access control, and modifying input or output.
+ use decorater:
+Define a Decorator: A decorator is a function that takes another function as an argument, adds some functionality, and returns a new function.
+Apply the Decorator: You can apply a decorator to a function using the @decorator_name syntax above the function definition.
+
+Q12- Explain the concept of a generator in Python. How is it different from a regular function?
+Ans- 
+A generator in Python is a special type of function that allows you to create an iterable sequence of values. Instead of returning a single value like a regular function, a generator uses the yield keyword to produce a series of values, one at a time, while maintaining its state between each call.
+Key Differences Between Generators and Regular Functions
+-Return vs. Yield:
+Regular Function: Uses return to send a value back to the caller and exits the function.
+Generator Function: Uses yield to produce a value and pause its state, allowing it to continue from where it left off when called again.
+-Memory Efficiency:
+Regular Function: Computes and returns all values at once, which can use a lot of memory if the result is large.
+Generator: Generates values on-the-fly, which means it only computes one value at a time, making it more memory efficient.
+
+Q13 -What is a closure in Python?
+Ans-A closure in Python is a function that retains access to variables from its enclosing scope, even after that scope has finished executing. This allows the inner function to remember the values of its outer function's variables.
+
+Q13-How does the GIL (Global Interpreter Lock) affect multi-threaded Python programs?
+Ans- The Global Interpreter Lock (GIL) in Python is a mechanism that prevents multiple native threads from executing Python bytecode simultaneously. This means that even in multi-threaded programs, only one thread can execute Python code at a time.
+
+Q14- Discuss the differences between shallow copy and deep copy in Python.
+Ans- In Python, shallow copy and deep copy are two ways to create copies of objects, but they behave differently:
+
+Shallow Copy
+Definition: Creates a new object, but inserts references to the objects found in the original.
+Behavior: Changes to mutable objects (like lists or dictionaries) inside the copied object will affect the original.
+Method: You can create a shallow copy using the copy module’s copy() function or the copy() method for lists.
+
+Deep Copy
+Definition: Creates a new object and recursively copies all objects found in the original, creating independent copies.
+Behavior: Changes to mutable objects in the copied object do not affect the original.
+Method: You can create a deep copy using the copy module’s deepcopy() function.
+
+Q15: Explain the purpose of the __init__ method in Python classes.
+Ans- The __init__ method in Python classes is a special method called a constructor. Its primary purpose is to initialize a new object's attributes when the object is created.
+Key Points:
+Initialization: It sets up initial values for the object's properties (attributes).
+Automatic Call: The __init__ method is automatically called when you create a new instance of a class.
+Parameters: You can pass arguments to __init__ to customize the initialization of the object.
+
+Q16: What are metaclasses in Python? Provide an example of their usage.
+Ans:- Metaclasses in Python are a type of class that defines how other classes behave. In simpler terms, a metaclass is the "class of a class." It allows you to control the creation and behavior of classes.
+
+Purpose of Metaclasses:
+Custom Class Creation: You can modify class attributes, enforce rules, or add functionality when classes are created.
+Frameworks and Libraries: They are often used in frameworks to create classes dynamically or enforce specific coding patterns.
+
+Q17:Describe the difference between __getattr__ and __getattribute__ in Python
+Ans- In Python, __getattr__ and __getattribute__ are special methods used to access attributes of an object, but they behave differently.
+
+__getattribute__
+Purpose: This method is called automatically for every attribute access on an object, regardless of whether the attribute exists or not.
+Usage: It’s used to define custom behavior for accessing any attribute.
+
+__getattr__
+Purpose: This method is called only when an attribute is not found in the usual places (like the object's dictionary).
+Usage: It’s used to define behavior for accessing attributes that don’t exist.
+
+Q18- How does Python manage memory?
+Ans- Python manages memory using a combination of automatic memory management techniques, primarily through reference counting and a garbage collector.
+
+Q19:Discuss the concept of namespaces and scope resolution in Python
+Ans- In Python, namespaces and scope resolution are concepts that help manage variable names and their accessibility within different parts of a program.
+
+Namespaces
+Definition: A namespace is a container that holds a set of identifiers (variable names) and their corresponding objects (values).
+Types of Namespaces:
+Built-in Namespace: Contains built-in functions and exceptions (e.g., print(), len()).
+Global Namespace: Contains names defined at the top level of a script or module.
+Local Namespace: Contains names defined within a function. Each function call creates a new local namespace.
+Enclosing Namespace: Refers to the scope of enclosing functions in nested function scenarios.
+
+Scope Resolution
+Definition: Scope refers to the visibility or accessibility of variables in different parts of the code.
+Types of Scope:
+Local Scope: Variables defined within a function; accessible only within that function.
+Enclosing Scope: Variables in the local scope of enclosing functions (for nested functions).
+Global Scope: Variables defined outside of any function; accessible throughout the module.
+Built-in Scope: Names that are pre-defined in Python (accessible everywhere).
